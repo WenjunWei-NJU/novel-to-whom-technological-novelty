@@ -13,7 +13,7 @@ Date order is strict at the application-date level. See the [variable dictionary
 
 ## Private review package
 
-This package contains research code, configurations, documentation and artificial tests. The study's figure inputs, frozen table displays, model outputs and rendered figures require separate authorization for hosting. They are excluded from this package. The current [LICENSE](LICENSE) records pending public-license approval.
+This private repository contains research code and configuration, methods documentation, and tests that generate artificial fixtures. It contains no real study data, numerical result files, or rendered figures. An open-source license has yet to be adopted.
 
 | Level | Scope | Status in this package |
 |---|---|---|
@@ -78,4 +78,6 @@ The support audit updates the designated sensitivity output directory. Run it on
 
 Sources are [USPTO PatentsView](https://www.uspto.gov/ip-policy/economic-research/patentsview) and [AIPat](https://doi.org/10.1016/j.respol.2026.105599). Data packaging, access and version limitations are in [Data availability](docs/data_availability.md). Plot reproduction and small tests fit a standard laptop. Formal refits need the analytical database, ample scratch space, and enough memory to hold large analysis arrays. The team sample is 2.67 million records and the inventor models use roughly 13 million records. The archived DuckDB input is about 1.5 GB. These are scale indicators, since no clean-machine runtime benchmark was run here.
 
-See the [result map](docs/reproducibility_map.md), [variable dictionary](docs/variable_dictionary.md), and [verification report](docs/verification_report.md) for the evidence and limits. Cite the associated manuscript using [CITATION.cff](CITATION.cff). The [LICENSE](LICENSE) file records pending author authorization.
+See the [result map](docs/reproducibility_map.md), [variable dictionary](docs/variable_dictionary.md), and [verification report](docs/verification_report.md) for the evidence and limits. Cite the associated manuscript using [CITATION.cff](CITATION.cff).
+
+We plan to share aggregate figure inputs and frozen table results where permissions allow. The project will not redistribute the original PatentsView or AIPat databases, the full microlevel analysis database, or the 12,000 real inventor–patent display observations used for the submitted Figure 3.

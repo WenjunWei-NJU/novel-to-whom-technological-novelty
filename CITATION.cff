@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript when using these materials."
+title: "Novel to Whom Technological Novelty Replication Materials"
+type: software
+authors:
+  - family-names: Wei
+    given-names: Wenjun
+  - family-names: Yang
+    given-names: Alex Jie
+  - family-names: Deng
+    given-names: Sanhong
+preferred-citation:
+  type: unpublished
+  title: "Novel to Whom? Historical Reference and the Measurement of Technological Novelty"
+  authors:
+    - family-names: Wei
+      given-names: Wenjun
+    - family-names: Yang
+      given-names: Alex Jie
+    - family-names: Deng
+      given-names: Sanhong

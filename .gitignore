@@ -1,0 +1,32 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+output/
+config/local/
+data/raw/
+data/prepared/
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.docx
+*.pem
+*.key
+
+# Author-only audits and private provenance
+/JOI_GITHUB_INTERNAL_PROVENANCE.md
+/GITHUB_FINAL_PUBLICATION_AUDIT.md
+/JOI_FINAL_PUBLICATION_AUDIT_EVIDENCE/
+
+# Research inputs and derived outputs awaiting hosting clearance
+/data/figure_inputs/
+/data/table_inputs/
+/figures/
+/tables/
+/JOI_Submit/
+/GITHUB_RELEASE_READINESS_REPORT.md
+/GITHUB_PRIVATE_SETUP_GUIDE.md
+/GITHUB_PRIVATE_HANDOFF_REPORT.md
+member_display.csv

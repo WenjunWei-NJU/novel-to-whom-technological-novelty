@@ -1,0 +1,24 @@
+{
+  "utility_only_input": true,
+  "snapshot": "2025-12-30",
+  "cohort_start": 2000,
+  "cohort_end": 2024,
+  "primary_end": 2024,
+  "early_years": 5,
+  "senior_years": 16,
+  "ai_threshold": 0.5,
+  "windows": [
+    5,
+    10
+  ],
+  "threads": 4,
+  "memory_limit": "4GB",
+  "plot_sample": 12000,
+  "min_surface_cell": 20,
+  "figure_width_mm": 183,
+  "figure_dpi": 450,
+  "robustness": true,
+  "synthetic": false,
+  "aipat_source": "Wu et al. (2026), AIPat",
+  "input_mode": "READ_EXISTING_CORE_DATABASE"
+}

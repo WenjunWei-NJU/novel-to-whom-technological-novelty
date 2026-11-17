@@ -1,0 +1,56 @@
+{
+  "data_root": "../data/raw",
+  "inputs": {
+    "patents": {
+      "path": "patent_dates.parquet",
+      "columns": {
+        "patent_id": "patent_id",
+        "filing_date": "filing_date",
+        "grant_date": "patent_date"
+      }
+    },
+    "inventors": {
+      "path": "patent_inventor.parquet",
+      "columns": {
+        "patent_id": "patent_id",
+        "inventor_id": "inventor_id"
+      }
+    },
+    "cpc": {
+      "path": "patent_cpc.parquet",
+      "columns": {
+        "patent_id": "patent_id",
+        "cpc": "cpc_subclass",
+        "sequence": "cpc_sequence"
+      }
+    },
+    "ai": {
+      "path": "aipat_patent_scores.parquet",
+      "columns": {
+        "patent_id": "patent_id",
+        "score": "aipat_ai_score"
+      }
+    },
+    "locations": null,
+    "citations": null
+  },
+  "utility_only_input": true,
+  "snapshot": "2025-12-30",
+  "cohort_start": 2000,
+  "cohort_end": 2024,
+  "primary_end": 2024,
+  "early_years": 5,
+  "senior_years": 16,
+  "ai_threshold": 0.5,
+  "windows": [
+    5,
+    10
+  ],
+  "threads": 4,
+  "memory_limit": "4GB",
+  "plot_sample": 12000,
+  "min_surface_cell": 20,
+  "figure_width_mm": 183,
+  "figure_dpi": 450,
+  "robustness": true
+}

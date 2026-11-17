@@ -1,0 +1,43 @@
+{
+  "1": {
+    "script": "plot_figure1.py",
+    "inputs": [
+      "composition.csv",
+      "zeros.csv",
+      "novelty_correlations.csv"
+    ]
+  },
+  "2": {
+    "script": "plot_figure2.py",
+    "inputs": [
+      "composition_surface.csv",
+      "profile_support.csv",
+      "estimands.csv"
+    ]
+  },
+  "3": {
+    "script": "plot_figure3.py",
+    "inputs": [
+      "member_distribution.csv",
+      "age_profiles.csv",
+      "estimands.csv"
+    ]
+  },
+  "4": {
+    "script": "plot_figure4.py",
+    "inputs": [
+      "alluvial.csv",
+      "opportunities.csv",
+      "source_means.csv",
+      "estimands.csv"
+    ]
+  },
+  "5": {
+    "script": "plot_figure5.py",
+    "inputs": [
+      "estimands.csv",
+      "plotted_estimates.csv",
+      "formal_estimands.csv"
+    ]
+  }
+}

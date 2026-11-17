@@ -1,0 +1,12 @@
+name: novel-to-whom
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - duckdb=2.0
+  - pyarrow=16.1
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scipy=1.13.1
+  - matplotlib=3.9.2
+  - pillow=10.4.0

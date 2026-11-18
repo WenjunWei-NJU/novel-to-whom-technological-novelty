@@ -83,4 +83,4 @@ All paths below are user-selected files or directories. The database and prepare
 | `redraw_figures.py` | Selected figure numbers, `--output` and separately held inputs declared in `config/figures.json`. Figure 3 uses aggregate inputs. |
 | `export_tables.py` | `--output` and `--input` pointing to the separately held frozen table JSON. |
 
-Level A redraws figures. Level B exports frozen table displays. Level C refits formal models with external study inputs. Level D rebuilds those inputs from original provider records. Verification of each level is summarized in the [README](../README.md#verified-reproduction-scope).
+Level A redraws figures. Level B exports frozen table displays. Level C refits formal models with external study inputs. Level D rebuilds those inputs from original provider records. Verification of each level is summarized in the [README](../README.md#private-review-package).

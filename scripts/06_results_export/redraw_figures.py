@@ -1,4 +1,4 @@
-"""Redraw the five submission figures from the included CSV inputs."""
+"""Redraw the five submission figures from separately supplied CSV inputs."""
 import argparse
 import json
 from pathlib import Path

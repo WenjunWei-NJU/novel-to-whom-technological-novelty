@@ -7,7 +7,7 @@ Replication materials for the Journal of Informetrics submission by Wenjun Wei, 
 - **Mean personal novelty** averages the share of the focal CPC subclasses absent from each inventor's own earlier patent record over eligible team members.
 - **Team novelty** measures the share of those CPC subclasses absent from the union of the team's earlier patent records.
 - **Corpus-first pairs** measures the share of unordered CPC subclass pairs absent from patents filed strictly earlier, on patents with at least two subclasses.
-- **Peer-history coverage** partitions personally new subclasses by whether early and other peers had previously recorded them. **Opportunity coverage (U)** measures the use of the early-peer-exclusive opportunity set when that set is nonempty.
+- **Peer-history coverage** partitions personally new subclasses by whether early and other peers had previously recorded them. **Opportunity coverage (U)** measures the share of early-peer-exclusive historical CPC subclasses that appear in the current patent, conditional on a nonempty opportunity set.
 
 Date order is strict at the application-date level. See the [variable dictionary](docs/variable_dictionary.md) for the career-stage definitions, FIRST cases, and denominators. The [data preparation commands](data/README.md#prepared-data-build) start with prepared inputs. They assemble team composition, analytical records, and rolling histories before estimation.
 
@@ -23,6 +23,8 @@ This private repository contains research code and configuration, methods docume
 | D | Rebuild the formal analysis from original data | NOT VERIFIED. Provider version equivalence and the full upstream history and pair reconstruction remain unverified. |
 
 ## Run lightweight tests
+
+The environment specification is provided for reproducibility, but installation on a clean machine has not yet been independently verified.
 
 ```sh
 conda env create -f environment.yml
@@ -76,7 +78,7 @@ The support audit updates the designated sensitivity output directory. Run it on
 
 ## Data, resources and citation
 
-Sources are [USPTO PatentsView](https://www.uspto.gov/ip-policy/economic-research/patentsview) and [AIPat](https://doi.org/10.1016/j.respol.2026.105599). Data packaging, access and version limitations are in [Data availability](docs/data_availability.md). Plot reproduction and small tests fit a standard laptop. Formal refits need the analytical database, ample scratch space, and enough memory to hold large analysis arrays. The team sample is 2.67 million records and the inventor models use roughly 13 million records. The archived DuckDB input is about 1.5 GB. These are scale indicators, since no clean-machine runtime benchmark was run here.
+Sources are [USPTO PatentsView](https://www.uspto.gov/ip-policy/economic-research/patentsview) and [AIPat](https://doi.org/10.1016/j.respol.2026.105599). Data packaging, access and version limitations are in [Data availability](docs/data_availability.md). Lightweight tests can be run on a standard laptop. Figure reproduction additionally requires the corresponding data inputs, which are not included in this repository. Formal refits need the analytical database, ample scratch space, and enough memory to hold large analysis arrays. The team sample is 2.67 million records and the inventor models use roughly 13 million records. The archived DuckDB input is about 1.5 GB. These are scale indicators, since no clean-machine runtime benchmark was run here.
 
 See the [result map](docs/reproducibility_map.md), [variable dictionary](docs/variable_dictionary.md), and [verification report](docs/verification_report.md) for the evidence and limits. Cite the associated manuscript using [CITATION.cff](CITATION.cff).
 
